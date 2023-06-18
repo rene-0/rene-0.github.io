@@ -1,0 +1,15 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 2px black;
+}
+
+.hero-background {
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
