@@ -20,3 +20,7 @@ body {
 .minimum-width-large {
   min-width: 512px;
 }
+
+.opacity-box:hover + .opacity-target {
+  opacity: 0;
+}
