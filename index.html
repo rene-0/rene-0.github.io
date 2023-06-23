@@ -11,17 +11,17 @@
   <body>
     <nav class="fixed top-0 left-0 z-10 min-w-full text-shadow text-white flex justify-between align-center font-bold p-2">
       <div id="logo" class="p-1 sm:p-2">
-        <a href="./">Rene.Dev</a>
+        <a href="#hero">Rene.Dev</a>
       </div>
       <ul class="flex">
-        <a href="/sobre" class="p-1 sm:p-2"><li>Sobre</li></a>
-        <a href="/projetos" class="p-1 sm:p-2"><li>Projetos</li></a>
-        <a href="/contato" class="p-1 sm:p-2"><li>Contato</li></a>
+        <a href="#projetos" class="p-1 sm:p-2"><li>Projetos</li></a>
+        <a href="#sobre" class="p-1 sm:p-2"><li>Sobre</li></a>
+        <a href="#contato" class="p-1 sm:p-2"><li>Contato</li></a>
       </ul>
     </nav>
     <main>
       <article>
-        <section class="flex flex-col justify-center items-center text-white bg-black h-screen hero-background">
+        <section id="hero" class="flex flex-col justify-center items-center text-white bg-black h-screen hero-background">
           <div class="test">
             <p class="font-light text-xl m-0">Olá, meu nome é</p>
             <h1 class="font-bold text-5xl sm:text-6xl xl:text-8xl">Renê Nunes Colombaro</h1>
@@ -37,7 +37,7 @@
             </div>
           </div>
         </section>
-        <section class="bg-slate-100 flex flex-col justify-center items-center">
+        <section id="projetos" class="bg-slate-100 flex flex-col justify-center items-center">
           <div class="max-w-lg p-5 sm:p-10 pb-0 text-justify minimum-width-large">
             <h3 class="text-3xl sm:text-5xl font-bold pb-3 sm:pb-5">Últimos Projetos</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -85,7 +85,7 @@
             </div>
           </div>
         </section>
-        <section class="bg-slate-100 flex flex-col justify-center items-center">
+        <section id="sobre" class="bg-slate-100 flex flex-col justify-center items-center">
           <div class="max-w-lg p-5 sm:p-10 text-justify minimum-width-large">
             <h3 class="text-3xl sm:text-5xl font-bold pb-3 sm:pb-5">Sobre</h3>
             <p class="mb-2">
@@ -102,7 +102,7 @@
             </p>
           </div>
         </section>
-        <section class="flex flex-col justify-center items-center text-white bg-stone-950">
+        <section id="contato" class="flex flex-col justify-center items-center text-white bg-stone-950">
           <div class="max-w-lg p-5 sm:p-10 pb-0 text-justify minimum-width-large">
             <h3 class="text-3xl sm:text-5xl font-bold pb-3 sm:pb-5">Contato</h3>
             <p class="mb-2">
