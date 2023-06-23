@@ -30,6 +30,15 @@ body {
   opacity: 0;
 }
 
+.more {
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 530px) {
+  .my-name {
+    max-width: 250px;
+  }
+}
 @media (max-width: 640px) {
   .minimum-width-large {
     min-width: 100%;
