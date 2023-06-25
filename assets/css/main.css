@@ -15,7 +15,7 @@ body {
 }
 
 .hero-background {
-  background-image: url("../images/hero-portifolio-hq.gif");
+  background-image: url("../images/hero-portfolio-hq.gif");
   background-color: yellow;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,12 +26,69 @@ body {
   min-width: 512px;
 }
 
-.opacity-box:hover + .opacity-target {
+/*  transition-opacity duration-500 opacity-100 opacity-target */
+
+.project-hover-hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  opacity: 1;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.project-description:hover + .project-hover-hint {
   opacity: 0;
 }
 
 .more {
   transform: translate(-50%, -50%);
+}
+
+/* bg-slate-950/50   p-2 sm:p-5 text-sm sm:text-base    opacity-box */
+
+.project-description {
+  display: block;
+  overflow-y: auto;
+  color: white;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+.project-description:hover {
+  opacity: 1;
+}
+
+.project-description::-webkit-scrollbar {
+  width: 5px;
+}
+
+.project-description::-webkit-scrollbar-track {
+  background: #dbdbdb;
+}
+
+.project-description::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.project-description::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media (max-width: 530px) {
